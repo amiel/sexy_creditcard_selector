@@ -9,7 +9,7 @@
 		self.keyup(function() {
 			var value = self.val().replace(/\D/g,'');
 
-			for (var company in credit_companies) {
+			for (var company in $.fn.sexy_creditcard_selector.credit_companies) {
 				if (credit_company_regexes[company].test(value))
 					callback(company);
 			}
