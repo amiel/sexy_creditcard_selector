@@ -4,12 +4,14 @@
 	
 	$.fn.sexy_creditcard_selector = function(option) {
 		var self = this,
+			companies = $.fn.sexy_creditcard_selector.credit_companies,
 			callback = $.isFunction(option) ? option : function(company) { $(option).val(company); };
 		
 		self.keyup(function() {
 			var value = self.val().replace(/\D/g,'');
 
-			for (var company in $.fn.sexy_creditcard_selector.credit_companies) {
+			for (var i in companies) {
+				var company = companies[i];
 				if (credit_company_regexes[company].test(value))
 					callback(company);
 			}
