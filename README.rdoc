@@ -1,6 +1,6 @@
 == Sexy Credit Card Selector
 
-When a valid credit card number is input to a text field, this jquery plugin calls a callback with the credit card company name.
+When a valid credit card number is input to a text field, this jquery plugin calls a callback with the credit card company name. This allows for easy auto selecting of the credit card type when the user enters their credit card number.
 	
 == Example
 
