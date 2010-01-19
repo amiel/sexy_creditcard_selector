@@ -1,0 +1,3 @@
+== Sexy Credit Card Selector
+
+	$.fn.sexy_creditcard_selector.credit_companies = ["switch", "visa", "diners_club", "master", "forbrugsforeningen", "dankort", "laser", "american_express", "solo", "jcb", "discover", "maestro"]; // defaults to [ "visa", "master", "american_express", "discover" ]
